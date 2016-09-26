@@ -36,6 +36,7 @@ ModelImporter:
     2300000: entire_staircase
     3300000: entire_staircase
     4300000: entire_staircase
+    6400000: entire_staircase
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -61,9 +62,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -80,7 +81,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     human: []

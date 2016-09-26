@@ -4,18 +4,13 @@ using System.Collections;
 public class Scrolling : MonoBehaviour
 {
     public RectTransform myRect;
-    public Rect rect;
-    public int speed = 1;
-
-    // Use this for initialization
-    void Start()
+    int speed = 2;
+	
+	// Update is called once per frame
+	void Update ()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+       myRect.position += Vector3.up * speed;
+        
+	}
+    
 }

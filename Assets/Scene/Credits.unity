@@ -125,7 +125,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -26}
-  m_SizeDelta: {x: 1920, y: 1029}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &238697893
 MonoBehaviour:
@@ -201,7 +201,7 @@ GameObject:
   - 224: {fileID: 764397776}
   - 222: {fileID: 764397778}
   - 114: {fileID: 764397777}
-  - 111: {fileID: 764397779}
+  - 114: {fileID: 764397780}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -224,8 +224,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 7.7}
-  m_SizeDelta: {x: 0, y: 3071}
+  m_AnchoredPosition: {x: 0, y: -1069}
+  m_SizeDelta: {x: 0, y: 4000}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &764397777
 MonoBehaviour:
@@ -250,8 +250,8 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 52
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 43
+    m_BestFit: 0
+    m_MinSize: 33
     m_MaxSize: 300
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -259,36 +259,33 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\n\n\n\n\n\nLeader - Jesse Lavigne\r\nCo-Leader - Jeremy Bregermann\r\nCreative
-    Directer/Designer \r\nCreative Directer - Elizabeth Bailey\r\nDesigner - Becca
-    Boulter\r\nUI Design - Charles Carper\r\nMain Menu - Charles Carper\r\nCredits
-    - Charles Carper\r\nLevel Design - Jeremy Bregermann\r\nArt Directer - Ian \r\nLevel
-    Art - Maurice Roach\r\nLevel Art - Jeremy Bregermann\r\nMusic/SFX - Rob Stant\r\n\n\r\nSydney
-    Jarvis\r\nJoey Garrison\r\nRob Stant\r\n\r\nProgramming -  Ethan White \r\nProgramming
-    - Nguy\u1EC5n Ng\u1EEF\r\nProgramming - Charles Carper\r\nAnimation - Charles
-    Carper\r\n\n3D Modeling  - TJ Phillips\r\n3D Modeling \r - Ian\r\nEnvironment
-    - Jeremy Bregermann\r\nEnvironment - Maurice Roach\n\n\n\n\n\n\n"
+  m_Text: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLeader - Jesse Lavigne\r\nCo-Leader
+    - Jeremy Bregermann\r\nCreative Directer/Designer \r\nCreative Directer - Elizabeth
+    Bailey\r\nDesigner - Becca Boulter\r\nUI Design - Charles Carper\r\nMain Menu
+    - Charles Carper\r\nCredits - Charles Carper\r\nLevel Design - Jeremy Bregermann\r\nArt
+    Directer - Ian \r\nLevel Art - Maurice Roach\r\nLevel Art - Jeremy Bregermann\r\nMusic/SFX
+    - Rob Stant\r\n\n\r\nSydney Jarvis\r\nJoey Garrison\r\nRob Stant\r\n\r\nProgramming
+    -  Ethan White \r\nProgramming - Nguy\u1EC5n Ng\u1EEF\r\nProgramming - Charles
+    Carper\r\nAnimation - Charles Carper\r\n\n3D Modeling  - TJ Phillips\r\n3D Modeling
+    \r - Ian\r\nEnvironment - Jeremy Bregermann\r\nEnvironment - Maurice Roach\n\n\n\n\n\n\n\n\n\n"
 --- !u!222 &764397778
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 764397775}
---- !u!111 &764397779
-Animation:
+--- !u!114 &764397780
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 764397775}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 584b6908fcbee0547aefe4631ed8f15f, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 584b6908fcbee0547aefe4631ed8f15f, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5621e8849d0c27540be988afa80e6384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRect: {fileID: 764397776}
 --- !u!1 &1112212426
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,7 +415,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -457,6 +454,7 @@ GameObject:
   - 92: {fileID: 1215150731}
   - 124: {fileID: 1215150730}
   - 81: {fileID: 1215150729}
+  - 114: {fileID: 1215150734}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -532,6 +530,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1215150734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1215150728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3d9e87351605d43add920ed009cc67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1386811128
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,8 +637,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 52}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1926787825
 MonoBehaviour:
