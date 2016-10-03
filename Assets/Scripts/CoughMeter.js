@@ -19,9 +19,9 @@ function Start () {
 
 }
 
-function AlterMeter (amount : int) {
+function AlterMeter (amount : float) {
 
-	coughTime = Mathf.Clamp(coughTime+coughTimer, 0, 100);
+	coughTime = Mathf.Clamp(coughTime+coughTimer, 0, 10);
 
 	}
 

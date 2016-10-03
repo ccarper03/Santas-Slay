@@ -7,6 +7,10 @@ public class SantaScript_NN : MonoBehaviour {
 	public NavMeshAgent agent;
 
 	public float walkSpeed;
+    public static bool walking;
+    public static bool idling;
+    private float footStepTime;
+    public float footStepDelay;
 
 	private float startTimer;
 	public float delayTimer;
@@ -26,7 +30,7 @@ public class SantaScript_NN : MonoBehaviour {
 	private Vector3 direction;
 
 	public AudioSource audioSource;
-	public AudioClip[] audioClips;
+	
 
 
 	public enum SantaStates {WalkIdle, Chase, TooFar};
@@ -46,6 +50,8 @@ public class SantaScript_NN : MonoBehaviour {
 				int rand = Random.Range (1, 101);
 				startTimer = 0;
 				if (rand <= 35) {
+                    idling = true;
+                    walking = false;
 					agent.Stop ();
 				}
 				if (rand > 35) {
@@ -55,10 +61,10 @@ public class SantaScript_NN : MonoBehaviour {
 					direction = new Vector3 (x, y, z);
 					agent.Resume ();
 					agent.SetDestination (direction);
-					if (transform.position != direction) {
-						PlaySound ();
-					}
-				}
+                    footStepTime += Time.deltaTime;
+                    walking = true;
+                    idling = false;
+                }
 			}
 		}
 
@@ -69,13 +75,26 @@ public class SantaScript_NN : MonoBehaviour {
 		if (santaStates == SantaStates.TooFar) {
 			agent.Resume();
 			agent.SetDestination (target.position);
-			if (transform.position != target.position) {
-				PlaySound ();
-			}
+			
 		}
+        //Put walk sound in the audio clip.
+        if (walking) {
+            footStepTime += Time.deltaTime;
+            if (footStepTime >= footStepDelay) {
+                footStepTime = 0;
+                PlaySound();
+            }
+        }
+        /*
+         
+        if (player.cough) {
+            footStepDelay = 1.5f;
+        }
+        
 
-		//This part will depend on the player's script.
-		/*
+		
+
+		//If the playing state = cough state. then the santa's state will = chase state. do the following.
 		if (theplayer state == state)
 			santaStates = SantaStates.Chase
 		if (santaStates == SantaStates.Chase)
@@ -86,7 +105,10 @@ public class SantaScript_NN : MonoBehaviour {
 	}
 
 	void PlaySound(){
-
+        
+        if (!audioSource.isPlaying) {
+            audioSource.Play();        
+        }
 
 	}
 }

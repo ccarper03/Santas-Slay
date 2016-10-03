@@ -5,12 +5,14 @@ public class PhonographScript : MonoBehaviour {
 
 	public Transform target;
 	public float playDistance;
-	public float distance;
+	public float examineDistance;
+	private float distance;
 	public bool playSoundByDistance;
-	public bool playSoundByExamined;
+	public bool playSound = true;
 	public AudioSource audioSource;
 	private bool inRange;
 	private float timer;
+
 
 
 	void Update(){
@@ -23,41 +25,34 @@ public class PhonographScript : MonoBehaviour {
 			playSoundByDistance = false;
 
 
-		if (playSoundByDistance && playSoundByExamined){
+		if (playSoundByDistance && playSound){
 			if (!audioSource.isPlaying) {
 				audioSource.Play ();
 			}
 		}
-		if (!playSoundByDistance || !playSoundByExamined) {
+		if (!playSoundByDistance || !playSound) {
 			audioSource.Stop ();
 		}
-	}
 
-	void OnTriggerEnter (Collider other){
-		if (other.gameObject.tag == "Player") {
+		if (distance <= examineDistance) {
 			inRange = true;
-
+			timer += Time.deltaTime;
 		}
-	}
-
-	void OnTriggerStay (Collider other) {
-		
-		timer += Time.deltaTime;
-		if (other.gameObject.tag == "Player") {
-			if (Input.GetKeyDown (KeyCode.E)) {
+		if (inRange) {
+			if (Input.GetKeyDown (KeyCode.E) && timer >= 0.4f) {
+				timer = 0;
 				if (!audioSource.isPlaying) {
-					playSoundByExamined = true;
+					playSound = true;
 				} else
-					playSoundByExamined = false;
+					playSound = false;
 			}
 		}
-	}
-		
-	void OnTriggerExit (Collider other){
-		if (other.gameObject.tag == "Player") {
+		if (distance > examineDistance) {
 			inRange = false;
 		}
 	}
+		
+
 
 	void OnGUI(){
 		GUIStyle myStyle;

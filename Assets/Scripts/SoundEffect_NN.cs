@@ -37,9 +37,14 @@ public class SoundEffect_NN : MonoBehaviour {
 
 		if (inRange) {
 			if (playSound == PlaySound.AutoPlay) {
+                soundSource.clip = soundEffect;
 				if (!soundSource.isPlaying) {
 					soundSource.Play ();
-				}
+                    if (destroyAfterExamine)
+                    {
+                        Destroy(gameObject, soundEffect.length);
+                    }
+                }
 			}
 
 			if (playSound == PlaySound.PlayOnTouch) {
