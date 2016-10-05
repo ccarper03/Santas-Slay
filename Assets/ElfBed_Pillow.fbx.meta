@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: 7f019798d75736c4ba6b7286fa7a20f9
+timeCreated: 1475375156
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bed_Matress
+    100002: Bed_Post
+    100004: Bed_Wall
+    100006: Bed_Wall2
+    100008: Elf_Bed
+    100010: Elf_Bed1
+    100012: //RootNode
+    100014: Mini_Bed_Post
+    100016: Mini_Bed_Post2
+    100018: Mini_Bed_Post3
+    100020: Pillow
+    100022: Pillow2
+    100024: polySurface1
+    100026: polySurface1 1
+    100028: polySurface10
+    100030: polySurface2
+    100032: polySurface3
+    100034: polySurface4
+    100036: polySurface5
+    100038: polySurface6
+    100040: polySurface7
+    100042: polySurface8
+    100044: polySurface9
+    100046: transform1
+    100048: transform19
+    100050: transform2
+    100052: transform20
+    100054: transform21
+    100056: transform22
+    100058: transform23
+    100060: transform24
+    100062: transform25
+    100064: transform26
+    100066: transform27
+    100068: transform28
+    100070: transform29
+    100072: transform3
+    100074: transform4
+    100076: transform5
+    100078: transform6
+    100080: transform7
+    100082: transform8
+    100084: transform9
+    400000: Bed_Matress
+    400002: Bed_Post
+    400004: Bed_Wall
+    400006: Bed_Wall2
+    400008: Elf_Bed
+    400010: Elf_Bed1
+    400012: //RootNode
+    400014: Mini_Bed_Post
+    400016: Mini_Bed_Post2
+    400018: Mini_Bed_Post3
+    400020: Pillow
+    400022: Pillow2
+    400024: polySurface1
+    400026: polySurface1 1
+    400028: polySurface10
+    400030: polySurface2
+    400032: polySurface3
+    400034: polySurface4
+    400036: polySurface5
+    400038: polySurface6
+    400040: polySurface7
+    400042: polySurface8
+    400044: polySurface9
+    400046: transform1
+    400048: transform19
+    400050: transform2
+    400052: transform20
+    400054: transform21
+    400056: transform22
+    400058: transform23
+    400060: transform24
+    400062: transform25
+    400064: transform26
+    400066: transform27
+    400068: transform28
+    400070: transform29
+    400072: transform3
+    400074: transform4
+    400076: transform5
+    400078: transform6
+    400080: transform7
+    400082: transform8
+    400084: transform9
+    2300000: polySurface10
+    3300000: polySurface10
+    4300000: polySurface10
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
