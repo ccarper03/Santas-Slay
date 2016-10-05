@@ -4,7 +4,10 @@ var CoughDropGrab : AudioSource;
 var buttonInRange;
 var buttonActivated;
 var coughMeter : CoughMeter;
-var coughTimer : float = 10;
+
+//var coughTimer : float = 10;
+var coughDropss : float = 1;
+
 public var useCoughdrop : AudioClip;
 
 
@@ -20,6 +23,8 @@ function Start() {
 
 
 function Update () {
+
+
 	// use a cough drop
 	if (Input.GetKeyDown (KeyCode.B) ) {
 		
@@ -27,13 +32,14 @@ function Update () {
 
 		// add time to cough timer
 
-		coughMeter.AlterMeter(coughTimer);
+		//coughMeter.AlterMeter(coughDropss);
+		//coughMeter.AlterMeter(coughTimer);
+
 
 		// play sound effect
 
 		AudioSource.PlayClipAtPoint (useCoughdrop, transform.position);
 
-
+		}
 	}
 
-}

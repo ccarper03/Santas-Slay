@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class CharacterControllerScript : MonoBehaviour {
 
-	public AudioClip wrapper;
+
 	public float moveSpeed = 5f;
 	public float jumpSpeed = 20;
 	public float gravity = 9.8f;
 	CharacterController controller;
 	Vector3 currentMovement;
 	public Transform cam;
+
 
 	void Start () {
 
@@ -18,30 +20,11 @@ public class CharacterControllerScript : MonoBehaviour {
 
 	}
 
+
+
 	void Update () {
 
-		if (Input.GetKeyDown (KeyCode.L)) {
-
-			Debug.Log ("hit L key");
-			
-			RaycastHit hit;
-			Ray ray = new Ray (cam.position, cam.forward);
-
-			if (Physics.Raycast (ray, out hit, 2f)) {
-
-				if (hit.collider.tag == "CoughDrop") {
-
-					Debug.Log ("hit coughdrop");
-
-					AudioSource.PlayClipAtPoint (wrapper, hit.collider.transform.position);
-
-					Destroy (hit.collider.gameObject);
-
-					Debug.Log ("killed Object");
-
-					}
-				}
-			}
+		
 
 
 
@@ -68,5 +51,4 @@ public class CharacterControllerScript : MonoBehaviour {
 
 
 		}
-
 }

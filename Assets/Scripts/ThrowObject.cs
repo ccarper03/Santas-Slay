@@ -18,7 +18,6 @@ public class ThrowObject : MonoBehaviour {
 		if (pickupObject.canThrow == true) {
 
 			if (Input.GetKeyDown(KeyCode.O)) {
-				Debug.Log ("Pressed Nigga");
 
 				pickupObject.carrying = false;
 

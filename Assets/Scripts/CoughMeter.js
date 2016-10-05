@@ -4,11 +4,14 @@ var coughingSource : AudioSource;
 var coughing : boolean = false;
 var meterDrain : float = 0.1;
 var coughTime : float = 0.0;
+var coughDrops : float = 0.0;
 var maxCoughTime : float = 10.0;
+var maxCoughDrops : float = 5.0;
 
 var coughingSound : AudioClip;
 
 var coughTimer : float = 10.0;
+var coughDropss : float = 1;
 
 
 function Start () {
@@ -22,6 +25,7 @@ function Start () {
 function AlterMeter (amount : float) {
 
 	coughTime = Mathf.Clamp(coughTime+coughTimer, 0, 10);
+	coughDrops = Mathf.Clamp(coughDrops+coughDropss, 0, 5);
 
 	}
 
